@@ -29,7 +29,7 @@ $$
 \hline \text { cd /examples/fibo } & \text { Move to the examples/fibo subdirectory on the HPC (i.e., the remote machine) } \\
 \hline \text { ls } & \text { Get a list of the files in the current directory on the HPC. } \\
 \hline \text { get fibo.py } & \text { Copy the file "fibo.py" from the HPC } \\
-\hline \text { get tutorial/HPC.pdf } & \text { Copy the file "HPC.pdf" from the HPC, which is in the "tutorial" subdirectory. }
+\hline \text { get tutorial/HPC.pdf } & \text { Copy the file "HPC.pdf" from the HPC, which is in the "tutorial" subdirectory. } \\
 \hline \text { lcd test } & \text { Move to the "test" subdirectory on your local machine. } \\
 \hline \text { lcd .. } & \text { Move up one level in the local directory. } \\
 \hline \text { lls } & \text { Get local directory listing } \\
