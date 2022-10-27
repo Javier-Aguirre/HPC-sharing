@@ -1,6 +1,5 @@
 ## Using SCP
 
-$$e^2=$$
 
 ### 1. From local to host
 On the terminal of the local computer:
@@ -27,20 +26,17 @@ Typical and popular commands inside an sftp session are:
 
 $$
 \begin{array}{|l|l|}
-\hline \text { cd /examples/fibo } & 
-\text { Move to the examples/fibo subdirectory on the HPC (i.e., the remote machine) } \\
+\hline \text { cd /examples/fibo } & \text { Move to the examples/fibo subdirectory on the HPC (i.e., the remote machine) } \\
 \hline \text { ls } & \text { Get a list of the files in the current directory on the HPC. } \\
 \hline \text { get fibo.py } & \text { Copy the file "fibo.py" from the HPC } \\
-\hline \text { get tutorial/HPC.pdf } & 
-\text { Copy the file "HPC.pdf" from the HPC, which is in the "tutorial" subdirectory. }
+\hline \text { get tutorial/HPC.pdf } & \text { Copy the file "HPC.pdf" from the HPC, which is in the "tutorial" subdirectory. }
 \hline \text { lcd test } & \text { Move to the "test" subdirectory on your local machine. } \\
 \hline \text { lcd .. } & \text { Move up one level in the local directory. } \\
 \hline \text { lls } & \text { Get local directory listing } \\
 \hline \text { put test.py } & \text { Copy the local file test.py to the HPC. } \\
 \hline \text { put test1.py test2.py } & \text { Copy the local file test1.py to the HPC and rename it to test2.py. } \\
 \hline \text { bye } & \text { Quit the sftp session } \\
-\hline \text { mget *.cc } &
-\text { Copy all the remote files with extension ".cc" to the local directory. }
+\hline \text { mget *.cc } & \text { Copy all the remote files with extension ".cc" to the local directory. } \\
 \hline \text { mput *.h } & \text { Copy all the local files with extension ".h" to the HPC. } \\
 \hline
 \end{array}
