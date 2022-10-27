@@ -1,5 +1,5 @@
 title: HPC
 description: This is a web page where you can find usefull HPC commands
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
