@@ -21,7 +21,7 @@ First of all, you must start a session with the following command:
 `sftp vsc45436@login.hpc.ugent.be`
 
 Typical and popular commands inside an sftp session are:
-$$\begin{array}{|l|l|}
+$\begin{array}{|l|l|}
 \hline \text { cd /examples/fibo } & \begin{array}{l}
 \text { Move to the examples/fibo subdirectory on the HPC (i.e., the } \\
 \text { remote machine) }
@@ -44,7 +44,7 @@ $$\begin{array}{|l|l|}
 \end{array} \\
 \hline \text { mput *.h } & \text { Copy all the local files with extension ".h" to the HPC. } \\
 \hline
-\end{array}$$
+\end{array}$
 
 
 
