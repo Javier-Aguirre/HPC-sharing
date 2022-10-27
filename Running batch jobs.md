@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 
 When you connect to the HPC, you have access to (one of) the login nodes of the cluster. The computations however, should not be performed on this login node. The actual work is done on the cluster’s compute nodes. The compute nodes are managed by the job scheduling software (Moab) and a Resource Manager (TORQUE).
 
