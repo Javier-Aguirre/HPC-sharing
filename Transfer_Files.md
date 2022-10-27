@@ -24,23 +24,58 @@ First of all, you must start a session with the following command:
 Typical and popular commands inside an sftp session are:
 
 
-$$
-\begin{array}{|l|l|}
-\hline \text { cd /examples/fibo } & \text { Move to the examples/fibo subdirectory on the HPC (i.e., the remote machine) } \\
-\hline \text { ls } & \text { Get a list of the files in the current directory on the HPC. } \\
-\hline \text { get fibo.py } & \text { Copy the file "fibo.py" from the HPC } \\
-\hline \text { get tutorial/HPC.pdf } & \text { Copy the file "HPC.pdf" from the HPC, which is in the "tutorial" subdirectory. } \\
-\hline \text { lcd test } & \text { Move to the "test" subdirectory on your local machine. } \\
-\hline \text { lcd .. } & \text { Move up one level in the local directory. } \\
-\hline \text { lls } & \text { Get local directory listing } \\
-\hline \text { put test.py } & \text { Copy the local file test.py to the HPC. } \\
-\hline \text { put test1.py test2.py } & \text { Copy the local file test1.py to the HPC and rename it to test2.py. } \\
-\hline \text { bye } & \text { Quit the sftp session } \\
-\hline \text { mget *.cc } & \text { Copy all the remote files with extension ".cc" to the local directory. } \\
-\hline \text { mput *.h } & \text { Copy all the local files with extension ".h" to the HPC. } \\
-\hline
-\end{array}
-$$
+<table id="tabular">
+<tbody>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; ">cd /examples/fibo</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; ">Move to the examples/fibo subdirectory on the HPC (i.e., the remote machine)</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">ls</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Get a list of the files in the current directory on the HPC.</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">get fibo.py</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Copy the file "fibo.py" from the HPC</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">get tutorial/HPC.pdf</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Copy the file "HPC.pdf" from the HPC, which is in the "tutorial" subdirectory.</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">lcd test</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Move to the "test" subdirectory on your local machine.</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">lcd ..</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Move up one level in the local directory.</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">lls</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Get local directory listing</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">put test.py</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Copy the local file test.py to the HPC.</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">put test1.py test2.py</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Copy the local file test1.py to the HPC and rename it to test2.py.</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">bye</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Quit the sftp session</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">mget *.cc</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Copy all the remote files with extension ".cc" to the local directory.</td>
+</tr>
+<tr style="border-top: none !important; border-bottom: none !important;">
+<td style="text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">mput *.h</td>
+<td style="text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; ">Copy all the local files with extension ".h" to the HPC.</td>
+</tr>
+</tbody>
+</table>
 
 
 
